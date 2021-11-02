@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Repodetail from './repoDetail';
 import Searchrepo from './searchRepo';
 import Sortedrepo from './sortedRepo'
-import './App.css';
 
 
 
