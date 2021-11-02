@@ -7,7 +7,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.search-repo-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  display: block;
+  font-size: 15px;
+  padding: 1rem 0.5rem;
+}
+
+.search-repo-input:focus{
+  border-bottom: 1px solid red;
+}
+
+.repo-ul{
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
 }
