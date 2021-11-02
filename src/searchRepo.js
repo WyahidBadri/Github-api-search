@@ -18,7 +18,7 @@ const Searchrepo = ({setInputValue, setGitLanguage}) => {
         e.preventDefault();
         setGitLanguage(e.target.elements.language.value)
       }}> 
-      <input className="search-repo-input" type="text" name="language" placeholder="Language" />
+      <input className="search-repo-input" type="text" name="language" placeholder="Language: Enter only one" />
       </form>
       
       </div>
