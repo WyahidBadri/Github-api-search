@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import Repodetail from './repoDetail';
-import Searchrepo from './searchRepo';
-import Sortedrepo from './sortedRepo'
+import Repodetail from './components/RepoDetail';
+import Searchrepo from './components/SearchRepo';
 
 
 
@@ -29,7 +28,7 @@ function App() {
     <div>
     <Searchrepo setInputValue={setInputValue} setGitLanguage={setGitLanguage} />
       <button onClick={() => setIsSorted(!isSorted)} >SORT BY STARS </button>
-      {isSorted  ? <Sortedrepo repositories={repositories.sort((a,b) => b.stargazers_count > a.stargazers_count ? 1 : -1)} /> : <Repodetail repositories={repositories} />}
+      {isSorted  ? <Repodetail repositories={repositories.sort((a,b) => b.stargazers_count > a.stargazers_count ? 1 : -1)} /> : <Repodetail repositories={repositories} />}
       
     </div>
   );
